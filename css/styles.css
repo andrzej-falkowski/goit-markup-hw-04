@@ -6,6 +6,9 @@
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --white: #ffffff;
+  --grey: #2e2f42b2;
+  --lightslate: #8e8f99;
+  --green: #31d0aa;
 }
 
 body {
@@ -40,6 +43,16 @@ h6 {
 ul {
   padding: 0px;
   margin: 0px;
+}
+
+h2 {
+  color: var(--navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11111;
+  letter-spacing: 0.72px;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 /* Header elements */
@@ -154,8 +167,12 @@ span {
 
 .hero-section {
   background-color: var(--navy-blue);
+  background: linear-gradient(var(--grey), rgba(46, 47, 66, 0.7)),
+    url("/images/people-office.jpg");
   text-align: center;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Features list section */
@@ -193,19 +210,17 @@ span {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.features_icon {
+  background-color: var(--cloud);
+  padding: 24px 100px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 /* What are we doing section */
 
 .section-padding-bottom {
   padding-bottom: 120px;
-}
-
-.h2-what-are-we-doing {
-  color: var(--navy-blue);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11111;
-  text-align: center;
-  margin-bottom: 72px;
 }
 
 .list-item-what-are-we-doing {
@@ -229,16 +244,6 @@ span {
 
 .ourteam-background {
   background-color: var(--cloud);
-}
-
-.h2-our-team {
-  color: var(--navy-blue);
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.72px;
-  line-height: 1.11111;
-  text-align: center;
-  margin-bottom: 72px;
 }
 
 .list-our-team {
@@ -272,6 +277,52 @@ span {
 
 .p-card-our-team {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.social-media-icon-list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.social-media-button {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  color: var(--cloud);
+  border: none;
+}
+
+.social-media-button:hover {
+  background-color: var(--ocean);
+}
+
+.social-media-button:focus {
+  background-color: var(--ocean);
+}
+
+/* Customers section*/
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.customer-icon {
+  padding: 16px 32px;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+  fill: var(--lightslate);
+  width: 168px;
+}
+
+.customer-icon:hover {
+  fill: var(--ocean);
+  border: 1px solid var(--ocean);
 }
 
 /* Footer elements */
@@ -279,10 +330,19 @@ span {
 .page-footer {
   padding: 100px 0;
   background-color: var(--navy-blue);
+  display: flex;
+}
+
+.footer-left-side {
+  display: block;
+}
+
+.footer-right-side {
+  display: block;
 }
 
 .logo-footer {
-  display: inline-block;
+  display: inline-flex;
   color: var(--cloud);
   font-family: Raleway;
   font-size: 18px;
@@ -293,10 +353,47 @@ span {
   margin-bottom: 16px;
 }
 
+.flex-footer {
+  display: flex;
+}
+
 .p-footer {
-  display: block;
+  display: flex;
   color: var(--cloud);
   max-width: 264px;
+  margin-right: 120px;
+}
+
+.footer-body-medium {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-icon-list {
+  list-style: none;
+  gap: 16px;
+  display: flex;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--iris);
+  color: var(--cloud);
+}
+
+.footer-icon:hover {
+  background-color: var(--green);
+}
+
+.footer-icon:focus {
+  background-color: var(--green);
 }
 
 /* Portfolio main section */
@@ -352,6 +449,13 @@ span {
 
 .card-portfolio {
   flex-basis: calc((100%-48px) / 3);
+}
+
+.card-portfolio:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .div-card-portfolio {
