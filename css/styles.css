@@ -168,7 +168,7 @@ span {
 .hero-section {
   background-color: var(--navy-blue);
   background: linear-gradient(var(--grey), rgba(46, 47, 66, 0.7)),
-    url("./images/people-office.jpg");
+    url("../images/people-office.jpg");
   text-align: center;
   padding: 188px 0;
   max-width: 1440px;
